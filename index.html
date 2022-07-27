@@ -80,6 +80,7 @@
               <div class="form-fild">
                 <label class="form-label" for="name">Имя</label>
                 <input
+                  name="name"
                   class="form-input"
                   type="text"
                   id="name"
@@ -118,13 +119,15 @@
                   rows="8"
                 ></textarea>
               </div>
-              <input class="input" name="checkbox" type="checkbox" id="checkbox" />
-              <label class="form-label" for="checkbox"
-                >Соглашаюсь с рассылкой и принимаю
-                <span class="oferta">Условия договора</span></label
-              >
-              <br />
-              <button type="submit">Отправить</button>
+              <div class="form-fild agreement-field">
+                <input class="input" name="checkbox" type="checkbox" id="checkbox" />
+                <label class="agreement" for="checkbox"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="" class="oferta">Условия договора</a></label
+                >
+              </div>
+
+              <button class="button" type="submit">Отправить</button>
             </form>
           </div>
         </section>
