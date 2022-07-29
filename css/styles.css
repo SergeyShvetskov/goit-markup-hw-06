@@ -735,6 +735,7 @@ margin-bottom: 5px;
 
 
 .agreement {
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin-left: 8px;
@@ -801,6 +802,7 @@ margin-bottom: 5px;
 }
 
 .new-checkbox {
+    
     margin-right: 8px;
     display: inline-block;    
     width: 16px;
@@ -830,6 +832,7 @@ margin-bottom: 5px;
     margin-right: 12px;
     padding: 15px 16px;
     width: 358px;
+    color: var(--brand-color-white);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -843,6 +846,7 @@ margin-bottom: 5px;
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-button {    
+    cursor: pointer;
     letter-spacing: 0.06em;
     font-weight: 700;
     line-height: 1.9;
