@@ -793,25 +793,25 @@ margin-bottom: 5px;
 }
 
 .modal-checkbox:checked + .new-checkbox {
-    background-color: var(--brand-color-blue-light);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2'/%3E%3Cpath d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
     border: 2px solid var(--brand-color-blue-light);
-    background-image: url(../images/icon-check.svg);
+    background-color: var(--brand-color-blue-light);
     background-size: contain;
     background-origin: border-box;
 }
+
 .new-checkbox {
     margin-right: 8px;
     display: inline-block;    
-    width: 20px;
-    height: 20px;
     width: 16px;
     height: 15px;
     border-radius: 2px;
     border: 2px solid var(--brand-color-black-light);
 
-    transition: border;
+    transition: border, background;
     transition-duration: var(--animation-duration);
     transition-timing-function: var(--animation-timing-function);
+    
 }
 
 .footer-button {
@@ -852,16 +852,13 @@ margin-bottom: 5px;
     padding-left: 29px;
     padding-right: 29px;
 }
-.footer-button::after {
-    background-image: url(../images/icon-send.svg);
+
+.footer-button-icon {
     margin-left: 10px;
-    content: "";
     width: 24px;
     height: 24px;
-    background-size: contain;
-    background-origin: border-box;
-    display: inline-block;
 }
+
 .footer-group {
     display: flex;
 }
