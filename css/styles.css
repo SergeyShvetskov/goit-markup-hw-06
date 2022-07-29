@@ -646,6 +646,7 @@ margin-bottom: 5px;
 }
 
 .button-close {
+    padding: 0;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -661,7 +662,7 @@ margin-bottom: 5px;
 }
 
 .button-close:hover, 
-.button-close:focus {
+.button-close:focus-visible {
     color: var(--brand-color-blue-light);    
 }
 
@@ -681,10 +682,12 @@ margin-bottom: 5px;
     color: #212121;
 }
 .modal .form-label {
+/* 
     font-size: 12px;
     text-align: left;
     letter-spacing: 0.01em;
     color: var(--brand-color-gray);
+     */
 }
 .form-field + .form-field {
     margin-top: 10px;
@@ -697,7 +700,6 @@ margin-bottom: 5px;
     align-items: flex-start;
 }
 .form-input {
-    margin-top: 4px;
     padding: 10px 11px 10px 42px;
     line-height: 1.17;
     width: 100%;
@@ -744,7 +746,6 @@ margin-bottom: 5px;
 }
 .agreement-field {
     margin-top: 20px;
-    /* margin-top: 10px; */
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -771,11 +772,13 @@ margin-bottom: 5px;
     transition-duration: var(--animation-duration);
     transition-timing-function: var(--animation-timing-function);
 }
+
 .form-input:hover + .form-icon,
 .form-input:focus + .form-icon {
     fill: var(--brand-color-blue-light);
 }
 .oferta {
+    margin-left: 4px;
     color: var(--brand-color-blue-light);
 }
 
@@ -858,4 +861,13 @@ margin-bottom: 5px;
 }
 .footer-group {
     display: flex;
+}
+
+.modal .form-label-span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    text-align: start;
+    letter-spacing: 0.01em;
+    color: var(--brand-color-gray);
 }
