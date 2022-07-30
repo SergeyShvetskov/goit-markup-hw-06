@@ -646,6 +646,10 @@ margin-bottom: 5px;
 }
 
 .button-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     padding: 0;
     position: absolute;
     top: 8px;
@@ -680,14 +684,7 @@ margin-bottom: 5px;
     
     color: #212121;
 }
-.modal .form-label {
-/* 
-    font-size: 12px;
-    text-align: left;
-    letter-spacing: 0.01em;
-    color: var(--brand-color-gray);
-     */
-}
+
 .form-field + .form-field {
     margin-top: 10px;
 }
@@ -733,7 +730,6 @@ margin-bottom: 5px;
     flex-direction: column;
 }
 
-
 .agreement {
     cursor: pointer;
     display: flex;
@@ -741,7 +737,7 @@ margin-bottom: 5px;
     margin-left: 8px;
     font-size: 14px;
     text-align: left;
-    letter-spacing: 0.01em;
+    line-height: 1.71;
     color: var(--brand-color-gray);
 }
 .agreement-field {
@@ -874,4 +870,11 @@ margin-bottom: 5px;
     text-align: start;
     letter-spacing: 0.01em;
     color: var(--brand-color-gray);
+}
+.modal-button {
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+.form-input.comment {
+    display: block;
 }
